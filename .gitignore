@@ -1,0 +1,11 @@
+/_build/
+/cover/
+/deps/
+/doc/
+/.fetch
+erl_crash.dump
+*.ez
+tiktak-*.tar
+.idea
+*.iml
+mix.lock

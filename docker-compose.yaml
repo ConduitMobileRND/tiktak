@@ -1,0 +1,20 @@
+version: '2'
+services:
+  tiktak-app:
+    build: .
+    environment:
+    - TIKTAK_CONCURRENCY_LIMIT=10
+    - TIKTAK_REPO_HOSTNAME=tiktak-db
+    - TIKTAK_REPO_DATABASE=postgres
+    - TIKTAK_REPO_USERNAME=postgres
+    - TIKTAK_REPO_PASSWORD=postgres
+  tiktak-db:
+    image: postgres:10-alpine
+    depends_on:
+      - tiktak-app
+    environment:
+      - PGDATA=/var/lib/postgresql/data/data
+    volumes:
+      - tiktak-db-data:/var/lib/postgresql/data
+volumes:
+  tiktak-db-data: {}
