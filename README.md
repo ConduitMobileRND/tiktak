@@ -59,7 +59,7 @@ docker run -e "TIKTAK_CONCURRENCY_LIMIT=10" -e "TIKTAK_REPO_DATABASE=postgres" -
 
 ## Setup a Development Environment
 ```
-# Setup Postgres in /config/dev.exe
+# Setup Postgres in /config/dev.exs
 ...
 ...
 
