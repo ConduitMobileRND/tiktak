@@ -26,7 +26,7 @@ defmodule TikTak.MixProject do
       {:plug, "~> 1.6"},
       {:ecto, "~> 2.2"},
       {:postgrex, "~> 0.13"},
-      {:crontab, "~> 1.1.2"},
+      {:crontab, "1.1.2"},
       {:gen_stage, "~> 0.11"},
       {:httpoison, "~> 1.2"},
       {:distillery, "~> 1.5", runtime: false}

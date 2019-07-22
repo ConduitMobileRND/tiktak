@@ -8,6 +8,8 @@ services:
     - TIKTAK_REPO_DATABASE=postgres
     - TIKTAK_REPO_USERNAME=postgres
     - TIKTAK_REPO_PASSWORD=postgres
+    ports:
+    - "8080:8080"
   tiktak-db:
     image: postgres:10-alpine
     depends_on:
